@@ -79,8 +79,8 @@ const FeatureUnion = () => {
                 <div 
                     className='feature-union-grid'
                     style={{
-                        gridTemplateColumns: `repeat(${numCols}, 1fr)`,
-                        gridTemplateRows: `repeat(${numRows}, 1fr)`,
+                        gridTemplateColumns: `repeat(${numCols}, ${1/numCols}fr)`,
+                        gridTemplateRows: `repeat(${numRows}, ${1/numRows}fr)`,
                     }}
                 >
                 { transforms.steps.map((step, i) => { 

@@ -136,6 +136,12 @@ main {
     cursor: pointer;
 }
 
+
 .feature-union-grid-step input {
-    width: fit-content;
+    position: relative;
+}
+
+.feature-union-max-chars-modal {
+    position: absolute;
+    bottom: -2%;
 }

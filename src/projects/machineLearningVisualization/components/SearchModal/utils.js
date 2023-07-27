@@ -1,0 +1,23 @@
+export const listOfSKLearnTransformers = [
+    'Binarizer',
+    'FunctionTransformer',
+    'Imputer',
+    'KernelCenterer',
+    'LabelBinarizer',
+    'LabelEncoder',
+    'MaxAbsScaler',
+    'MinMaxScaler',
+    'MultiLabelBinarizer',
+    'Normalizer',
+    'OneHotEncoder',
+    'OrdinalEncoder',
+    'PolynomialFeatures',
+    'PowerTransformer',
+    'QuantileTransformer',
+    'RobustScaler',
+    'StandardScaler',
+    'PCA',
+    'TruncatedSVD',
+    'SparseCoder',
+
+]

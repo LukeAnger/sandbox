@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-import { Pipeline, Step, ColumnTransformer, FeatureUnion, DrawIO } from './components'
+import { Pipeline, Step, ColumnTransformer, FeatureUnion} from './components'
 
 const MachineLearningVisualization = () => {
     const components = [ 'pipeline', 'step', 'columnTransformer', 'featureUnion', 'drawIO' ]
@@ -18,7 +18,6 @@ const MachineLearningVisualization = () => {
                 {component === 'step' && <Step />}
                 {component === 'columnTransformer' && <ColumnTransformer />}
                 {component === 'featureUnion' && <FeatureUnion />}
-                {component === 'drawIO' && <DrawIO />}
             </div>
         </>
     )

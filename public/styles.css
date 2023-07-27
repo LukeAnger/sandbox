@@ -135,13 +135,23 @@ main {
     border: none;
     cursor: pointer;
 }
-
+.feature-union-grid-step > div {
+    position: relative;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
 
 .feature-union-grid-step input {
-    position: relative;
+    width: 80%;
+    text-align: center;
+    border-radius: 5px;
 }
 
 .feature-union-max-chars-modal {
     position: absolute;
-    bottom: -2%;
+    font-size: 0.9rem;
+    color: rgb(241, 87, 87);
+    text-shadow: 1px 1px 1px black;
+    bottom: -75%;
 }

@@ -22,12 +22,12 @@ const initialFeatureUnion = {
     name: 'Data FeatUnion',
     steps: [
         {
-            name: 'edit step name',
-            type: 'edit step type',
+            name: '',
+            type: '',
         },
         {
-            name: 'edit step name',
-            type: 'edit step type',
+            name: '',
+            type: '',
         },
     ],
 }
@@ -58,14 +58,12 @@ const FeatureUnion = () => {
     }
 
     const updateStep = (index, updatedStep) => {
-        console.log("updateStep", index, updateStep)
         const newSteps = transforms.steps.map((step, i) => {
             if (i === index) {
                 return updatedStep
             }
             return step
         })
-        console.log("newSteps", newSteps)
         setTransforms({...transforms, steps: newSteps})
     }
 

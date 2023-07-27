@@ -2,15 +2,17 @@ import React, { useState, useEffect } from 'react';
 
 import { Sandbox, MachineLearningVisualization, AnimatedBackgrounds } from './projects'
 
+const logo = 'https://images.unsplash.com/photo-1688872132071-64cd1fa34243?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1031&q=80'
 const App = () => {
 
     const projects = ['sandbox', 'machineLearningVisualization', 'animatedBackgrounds']
-    const [ project, setProject ] = useState(projects[1])
+    const [ project, setProject ] = useState(projects[0])
 
     return (
         <>
             <header>
-                <h1> Personal Sandbox </h1>
+                <img id='logo' src={logo} alt='logo' />
+                <h1> Sandbox </h1>
                 <select value={project} onChange={e => setProject(e.target.value)}>
                     {projects.map(project => <option key={project} value={project}>{project}</option>)}
                 </select>

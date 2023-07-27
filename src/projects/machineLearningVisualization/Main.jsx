@@ -4,7 +4,7 @@ import { Pipeline, Step, ColumnTransformer, FeatureUnion, DrawIO } from './compo
 
 const MachineLearningVisualization = () => {
     const components = [ 'pipeline', 'step', 'columnTransformer', 'featureUnion', 'drawIO' ]
-    const [ component, setComponent ] = useState(components[4])
+    const [ component, setComponent ] = useState(components[3])
     return (
         <>
             <div className='project-header'>

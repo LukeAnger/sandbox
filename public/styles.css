@@ -17,8 +17,15 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 2px solid rgba(0, 0, 0, 0.75);
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.75);
     padding: 0.5rem;
+}
+
+#logo {
+    width: 50px;
+    height: 50px;
+    border-radius: ;
+    object-fit: contain;
 }
 
 header select {
@@ -55,3 +62,80 @@ main {
     padding: 1rem;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.feature-union {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 225px;
+    height: 350px;
+    background-color: rgb(233, 149, 52);
+    padding: 0.75rem;
+}
+
+.feature-union-header {
+    width: 80%;
+    max-height: 2.5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.feature-union-grid-container {
+    height: calc(100% - 2.5rem);
+    width: 100%;
+}
+
+.feature-union-grid {
+    width: 100%;
+    height: 100%;
+    padding: 0.25rem;
+    display: grid;
+    gap: 0.75rem;
+    place-content: center;
+}
+
+.feature-union-grid-step {
+    position: relative;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    box-shadow: 0 0 1px 2px rgb(145, 87, 11);
+    border-radius: 0.25rem;
+}
+
+.feature-union-grid-step button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.feature-union-grid-step input {
+    width: fit-content;
+}
